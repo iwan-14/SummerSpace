@@ -14,15 +14,73 @@
         <div class="logo-container">
             <img src="./img/logo.png" alt="logo" width="200" height="200" />
         </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a class="nav-links" href="#">My Team</a></li>
-                <li><a class="nav-links" href="#">Support</a></li>
-                <li><a class="nav-links" href="#">About Us</a></li>
-                <li><a class="nav-links" href="#">Project</a></li>
-            </ul>
-        </nav>
+    
+        <button type="button" class="btn btn-transparant" data-toggle="modal" data-target=".bd-example-modal-sm">My Team</button>
+
+        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              Kelompok 12:
+              Anggito Damartantyo (535180122)
+              Iwan Kurniawan      (535180138)
+              Nevio Rumbay        (535180148)
+              Marcelino           (535180111)
+              Paulus              (535180149)
+            </div>
+          </div>
+        </div>
+        <!-- Small modal -->
+<button type="button" class="btn btn-transparant" data-toggle="modal" data-target=".bd-example-modal-sm">About Us</button>
+
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      Summer Space Apparel Merupakan Toko Pakaian Basic untuk Pria dan Wanita dalam berbagai Ukuran. Kami hadir dengan Online Store yang dapat di akses menggunakan berbagai device, guna mempermudah masyarakat yang ingin membeli pakaian Basic berkualitas dengan harga terjangkau, tanpa harus repot untuk keluar Rumah.
+    </div>
+  </div>
+</div>
+<button type="button" class="btn btn-transparant" data-toggle="modal" data-target=".bd-example-modal-sm">Project</button>
+
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      Project ini dibuat demi memenuhi nilai mata kuliah Web Programming.
+    </div>
+  </div>
+</div>
+        <button type="button" class="btn btn-transparant" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Contact Us</button>
         <div class="cart">
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">FAQ</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Email:</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                          <label for="message-text" class="col-form-label">Message:</label>
+                          <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Send message</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
             <a href="#"> <img src="./img/cart.png" width="50" height="50" alt="cart"></a>
         </div>
     </header>
@@ -41,7 +99,9 @@
                     <button class="cta-add">Go Shop</button>
                 </div>
             </div>
+            
             <div class="carousel-container">
+                
                 <i class="fa fa-arrow-right" id="nextBtn" ></i>
                 <i class="fa fa-arrow-left" id="prevBtn" ></i>
                 <div class="carousel-slide">
@@ -55,7 +115,17 @@
             </div>
             <img class="bg" src="./img/background.jpg" width="1366" height="768" alt="background" />
     </main>
+
     
+    <div class="jumbotron">
+        <h1 class="display-4">SUMMER DISCOUNT</h1>
+        <p class="lead">Discount hingga 50% Tunggu apa lagi!
+        <hr class="my-4">
+        <p></p>
+        <p class="lead">
+          <a class="btn btn-dark btn-lg" href="#" role="button">Learn more</a>
+        </p>
+      </div>
 
     <script src="./js/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

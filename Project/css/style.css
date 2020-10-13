@@ -34,6 +34,10 @@ nav{
     justify-content: space-around;
     list-style: none;
 }
+.cart{
+    justify-content: space-around;
+    list-style: none;
+}
 .nav-links{
     color: black;
     font-size: 20px;
@@ -111,4 +115,11 @@ nav{
     font-size: 30px;
     color: black;
     cursor: pointer;
+}
+.jumbotron{
+    margin-top: 1px;
+    background-color: black;
+    margin: 0px;
+    padding: 20px;
+    box-sizing: border-box;
 }
