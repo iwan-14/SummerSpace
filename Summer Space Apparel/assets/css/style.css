@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+:root {
+    --color1: #a9a9a9;
+    --color2: #778899;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 2.6rem;
+    line-height: 4rem;
+    font-weight: 700;
+}
+
+.btn-white {
+    border: 2px solid #ffffff;
+    border-radius: 2rem;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: lowercase;
+    font-size: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.btn-white:hover {
+    background-color: #000000;
+    color: var(--color1);
+    border: 2px solid #000000;
+}
+
+/* Section Title */
+
+.section-title {
+    position: relative;
+}
+
+h2.section-title-heading {
+    color: #000000;
+    padding-top: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid #000000;
+    width: 8%;
+    top: 80px;
+}
+
+.section-title:hover::after {
+    width: 12%;
+    transition: all 0.6s ease-out;
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+
+}
+
+
+/*========== NAVIGATION ==========*/
+
+.navbar {
+    padding-top: 0;
+    height: 50px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #191970;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ffffff;
+}
+
+.navbar.active {
+    background-color: rgba(119,136,153, 0.7);
+    ;
+    box-shadow: 1px 2px 18px rgba(0,0,0,0.1);
+}
+
+
+
+/*========== HERO ==========*/
+
+#hero {
+    background: url(../img/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    padding-top: 15rem;
+    padding-bottom: 21rem;
+    position: relative;
+}
+
+.main-hero-content h1 {
+    text-transform: uppercase;
+    letter-spacing: .11rem;
+}
+
+.main-hero-content p {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+
+
+/*========== ABOUT US ==========*/
+
+#about_us {
+    background-color: #a9a9a9;
+    padding-bottom: 6rem;
+    padding-top: 3rem;
+}
+
+#about_us .section-title-heading {
+    padding-bottom: 1rem;
+}
+
+#about_us .carousel-item h5 {
+    color: #000000;
+}
+
+/*========== OUR TEAM ==========*/
+
+#our_team {
+    background: url(../img/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    padding-top: 7rem;
+    padding-bottom: 11rem;
+    position: relative;
+}
+
+#our_team .profile {
+    background-color: #a9a9a9;
+    box-shadow: -1px 0px 12px 4px rgba(0,0,0, 0.24);
+    margin-right: 1rem;
+    width: calc (90% / 3);
+}
+
+#our_team .profile .table-header h4 {
+    color: #000000;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+#our_team .profile .table-content {
+    margin-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+#our_team .profile .table-footer .social-icons {
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+
+#our_team .profile .table-footer .social-icons a {
+    margin-right: 10px;
+    color: #000000;
+}
+
+
+
+
+
+
+/*========== CONTACT US ==========*/
+
+#contact {
+    background-color: #a9a9a9;
+    padding-bottom: 5rem;
+    padding-top: 8rem;
+    position: relative;
+}
+
+.btn-contact {
+    background: #000000;
+    padding: .5rem 2.2rem;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 2rem;
+    border:none;
+}
+
+.btn-contact:hover {
+    background: #ffffff;
+    color: #a9a9a9;
+    border: 2px solid #a9a9a9;
+}
+
+#contact .contact-details ul li {
+    padding-bottom: .8rem;
+}
+
+
+
+/*========== OUR TEAM ==========*/
+
+#footer {
+    background-color: #778899;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+}
+
+#footer:before {
+    content: '';
+    position: absolute;
+    background-color: #778899;
+    width: 100%;
+    height: 45%;
+    transform: skewY(-2deg);
+    transform-origin: top right;
+    top: -5.5rem;
+    right: 0;
+    left: 0;
+}
+
+#footer .footer-logo img {
+    margin-top: -3rem;
+}
+
+#footer .social-icons {
+    margin-top: -5rem;
+    margin-bottom: 3rem;
+}
+
+#footer .social-icons a {
+    margin-right: 10px;
+    color: #000000;
+}
+
+.copyright p {
+    margin-top: -2rem;
+}
