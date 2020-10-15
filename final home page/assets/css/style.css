@@ -133,9 +133,36 @@ h2.section-title-heading {
     padding-bottom: 1rem;
 }
 
-#about_us .carousel-item h5 {
-    color: #000000;
+#about_us .feature-block:nth-child(1) img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    height: 50px;
+    width: 50px;
 }
+
+#about_us .feature-block:nth-child(2) img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    height: 50px;
+    width: 50px;
+}
+
+#about_us .feature-block:nth-child(3) img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    height: 50px;
+    width: 50px;
+}
+
+#about_us .carousel-item {
+    padding-top: 5rem;
+}
+
+
+
 
 /*========== OUR TEAM ==========*/
 
