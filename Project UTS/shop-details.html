@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Summer_Space ">
+    <meta name="description" content="Summer_Space">
     <meta name="keywords" content="Summer_Space, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Summer Space Apparel</title>
+    <title>Summer Space Apparel | Template</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
@@ -39,14 +39,19 @@
                 <a href="#">FAQs</a>
             </div>
             <div class="offcanvas__top__hover">
-                <span>IDR <i class="arrow_carrot-down"></i></span>
+                <span>Usd <i class="arrow_carrot-down"></i></span>
+                <ul>
+                    <li>USD</li>
+                    <li>EUR</li>
+                    <li>USD</li>
+                </ul>
             </div>
         </div>
         <div class="offcanvas__nav__option">
             <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
             <a href="#"><img src="img/icon/heart.png" alt=""></a>
             <a href="#"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
-            <div class="price">Rp.0</div>
+            <div class="price">$0.00</div>
         </div>
         <div id="mobile-menu-wrap"></div>
     </div>
@@ -58,6 +63,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-7">
+                        <div class="header__top__left">
+                        </div>
                     </div>
                     <div class="col-lg-6 col-md-5">
                         <div class="header__top__right">
@@ -77,25 +84,23 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="img/ssa.png" alt=""></a>
+                        <a href="./inex.html"><img src="img/ssa.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="./shop.html">Shop</a></li>
+                            <li><a href="./inex.html">Home</a></li>
+                            <li class="active"><a href="./shop.html">Shop</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="dropdown">
-                                            <li><a href="./about.html">About Us</a></li>
-                                            <li><a href="./shop-details.html">Shop Details</a></li>
-                                            <li><a href="./shopping-cart.html">Shopping Cart</a></li>
-                                            <li><a href="./checkout.html">Check Out</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="./contact.html">Contacts</a></li
+                                    <li><a href="./about.html">About Us</a></li>
+                                    <li><a href="./shop-details.html">Shop Details</a></li>
+                                    <li><a href="./shopping-cart.html">Shopping Cart</a></li>
+                                    <li><a href="./checkout.html">Check Out</a></li>
                                 </ul>
                             </li>
+                            <li><a href="./contact.html">Contacts</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -113,151 +118,119 @@
     </header>
     <!-- Header Section End -->
 
-    <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-option">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb__text">
-                        <h4>About Us</h4>
-                        <div class="breadcrumb__links">
+    <!-- Shop Details Section Begin -->
+    <section class="shop-details">
+        <div class="product__details__pic">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="product__details__breadcrumb">
                             <a href="./index.html">Home</a>
-                            <span>About Us</span>
+                            <a href="./shop.html">Shop</a>
+                            <span>Product Details</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">
+                                    <div class="product__thumb__pic set-bg" data-setbg="img/shop-details/details1.jpg">
+                                    </div>
+                                </a>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-9">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                <div class="product__details__pic__item">
+                                    <img src="img/shop-details/details1.jpg" alt="">
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product__details__content">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="product__details__text">
+                            <h4>Jaket Dilan</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <span> - 99 Reviews</span>
+                            </div>
+                            <h3>Rp.150.000</h3>
+                            <p>Kamu menjadi tampan jika menggunakan jaket Dilan ini.</p>
+                            <div class="product__details__option">
+                                <div class="product__details__option__size">
+                                    <span>Size:</span>
+                                    <label for="xxl">xxl
+                                        <input type="radio" id="xxl">
+                                    </label>
+                                    <label class="active" for="xl">xl
+                                        <input type="radio" id="xl">
+                                    </label>
+                                    <label for="l">l
+                                        <input type="radio" id="l">
+                                    </label>
+                                    <label for="sm">s
+                                        <input type="radio" id="sm">
+                                    </label>
+                                </div>
+                                <div class="product__details__option__color">
+                                    <span>Color:</span>
+                                    <label class="c-1" for="sp-1">
+                                        <input type="radio" id="sp-1">
+                                    </label>
+                                    <label class="c-2" for="sp-2">
+                                        <input type="radio" id="sp-2">
+                                    </label>
+                                    <label class="c-3" for="sp-3">
+                                        <input type="radio" id="sp-3">
+                                    </label>
+                                    <label class="c-4" for="sp-4">
+                                        <input type="radio" id="sp-4">
+                                    </label>
+                                    <label class="c-9" for="sp-9">
+                                        <input type="radio" id="sp-9">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="product__details__cart__option">
+                                <div class="quantity">
+                                    <div class="pro-qty">
+                                        <input type="text" value="1">
+                                    </div>
+                                </div>
+                                <a href="#" class="primary-btn">add to cart</a>
+                            </div>
+                            <div class="product__details__btns__option">
+                                <a href="#"><i class="fa fa-heart"></i> add to wishlist</a>
+                                <a href="#"><i class="fa fa-exchange"></i> Add To Compare</a>
+                            </div>
+                            <div class="product__details__last__option">
+                                <h5><span>Guaranteed Safe Checkout</span></h5>
+                                <img src="img/shop-details/details-payment.png" alt="">
+                                <ul>
+                                    <li><span>SKU:</span> 3812912</li>
+                                    <li><span>Categories:</span> Clothes</li>
+                                    <li><span>Tag:</span> Clothes, Skin, Body</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Breadcrumb Section End -->
-
-    <!-- About Section Begin -->
-    <section class="about spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="about__pic">
-                        <img src="img/about/about-us1.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="about__item">
-                        <h4>Fashionable</h4>
-                        <p>Didesain oleh para desainer ternama, apparels kami berhasil memperoleh gelar Best Fashion of the Year.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="about__item">
-                        <h4>Comfortable</h4>
-                        <p>Apparel kami dibuat dengan kain khusus yang mampu memberikan kenyamanan maksimal.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="about__item">
-                        <h4>Multivarian</h4>
-                        <p>Summer Space Apparel memiliki berbagai macam varian dari headware sampai footwear.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Section End -->
-
-    <!-- Counter Section Begin -->
-    <section class="counter spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="counter__item">
-                        <div class="counter__item__number">
-                            <h2 class="cn_num">102</h2>
-                        </div>
-                        <span>Our <br />Clients</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="counter__item">
-                        <div class="counter__item__number">
-                            <h2 class="cn_num">30</h2>
-                        </div>
-                        <span>Total <br />Categories</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="counter__item">
-                        <div class="counter__item__number">
-                            <h2 class="cn_num">102</h2>
-                        </div>
-                        <span>In <br />Country</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="counter__item">
-                        <div class="counter__item__number">
-                            <h2 class="cn_num">98</h2>
-                            <strong>%</strong>
-                        </div>
-                        <span>Happy <br />Customer</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Counter Section End -->
-
-    <!-- Team Section Begin -->
-    <section class="team spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <span>Our Team</span>
-                        <h2>Meet Our Team</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="team__item">
-                        <img src="img/about/pic1.jpg" alt="">
-                        <h4>Anggito Damartantyo</h4>
-                        <span>Owner Store</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="team__item">
-                        <img src="img/about/pic.jpeg" alt="">
-                        <h4>Iwan Kurniawan</h4>
-                        <span>Designer</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="team__item">
-                        <img src="img/about/pic2.jpg" alt="">
-                        <h4>Nevio Rumbay</h4>
-                        <span>Manager</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="team__item">
-                        <img src="img/about/pic3.jpg" alt="">
-                        <h4>Marcellino Fernandez</h4>
-                        <span>Delivery</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="team__item">
-                        <img src="img/about/pic4.jpg" alt="">
-                        <h4>Paulus Samotana</h4>
-                        <span>Delivery</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Team Section End -->
+    <!-- Shop Details Section End -->
 
     <!-- Footer Section Begin -->
     <footer class="footer">
@@ -286,7 +259,7 @@
                         <ul>
                             <li><a href="#">Contact Us</a></li>
                             <li><a href="#">Payment Methods</a></li>
-                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Delivary</a></li>
                             <li><a href="#">Return & Exchanges</a></li>
                         </ul>
                     </div>

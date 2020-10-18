@@ -58,6 +58,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-7">
+                        <div class="header__top__left">
+                        </div>
                     </div>
                     <div class="col-lg-6 col-md-5">
                         <div class="header__top__right">
@@ -84,18 +86,16 @@
                     <nav class="header__menu mobile-menu">
                         <ul>
                             <li><a href="./index.html">Home</a></li>
-                            <li><a href="./shop.html">Shop</a></li>
+                            <li class="active"><a href="./shop.html">Shop</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="dropdown">
-                                            <li><a href="./about.html">About Us</a></li>
-                                            <li><a href="./shop-details.html">Shop Details</a></li>
-                                            <li><a href="./shopping-cart.html">Shopping Cart</a></li>
-                                            <li><a href="./checkout.html">Check Out</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="./contact.html">Contacts</a></li
+                                    <li><a href="./about.html">About Us</a></li>
+                                    <li><a href="./shop-details.html">Shop Details</a></li>
+                                    <li><a href="./shopping-cart.html">Shopping Cart</a></li>
+                                    <li><a href="./checkout.html">Check Out</a></li>
                                 </ul>
                             </li>
+                            <li><a href="./contact.html">Contacts</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -119,10 +119,11 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb__text">
-                        <h4>About Us</h4>
+                        <h4>Check Out</h4>
                         <div class="breadcrumb__links">
                             <a href="./index.html">Home</a>
-                            <span>About Us</span>
+                            <a href="./shop.html">Shop</a>
+                            <span>Check Out</span>
                         </div>
                     </div>
                 </div>
@@ -131,133 +132,135 @@
     </section>
     <!-- Breadcrumb Section End -->
 
-    <!-- About Section Begin -->
-    <section class="about spad">
+    <!-- Checkout Section Begin -->
+    <section class="checkout spad">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="about__pic">
-                        <img src="img/about/about-us1.jpg" alt="">
+            <div class="checkout__form">
+                <form action="#">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-6">
+                            <h6 class="coupon__code"><span class="icon_tag_alt"></span> Have a coupon? <a href="#">Click
+                            here</a> to enter your code</h6>
+                            <h6 class="checkout__title">Billing Details</h6>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>Fist Name<span>*</span></p>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>Last Name<span>*</span></p>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout__input">
+                                <p>Country<span>*</span></p>
+                                <input type="text">
+                            </div>
+                            <div class="checkout__input">
+                                <p>Address<span>*</span></p>
+                                <input type="text" placeholder="Street Address" class="checkout__input__add">
+                                <input type="text" placeholder="Apartment, suite, unite ect (optinal)">
+                            </div>
+                            <div class="checkout__input">
+                                <p>Town/City<span>*</span></p>
+                                <input type="text">
+                            </div>
+                            <div class="checkout__input">
+                                <p>Country/State<span>*</span></p>
+                                <input type="text">
+                            </div>
+                            <div class="checkout__input">
+                                <p>Postcode / ZIP<span>*</span></p>
+                                <input type="text">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>Phone<span>*</span></p>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>Email<span>*</span></p>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout__input__checkbox">
+                                <label for="acc">
+                                    Create an account?
+                                    <input type="checkbox" id="acc">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <p>Create an account by entering the information below. If you are a returning customer
+                                please login at the top of the page</p>
+                            </div>
+                            <div class="checkout__input">
+                                <p>Account Password<span>*</span></p>
+                                <input type="text">
+                            </div>
+                            <div class="checkout__input__checkbox">
+                                <label for="diff-acc">
+                                    Note about your order, e.g, special noe for delivery
+                                    <input type="checkbox" id="diff-acc">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="checkout__input">
+                                <p>Order notes<span>*</span></p>
+                                <input type="text"
+                                placeholder="Notes about your order, e.g. special notes for delivery.">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="checkout__order">
+                                <h4 class="order__title">Your order</h4>
+                                <div class="checkout__order__products">Product <span>Total</span></div>
+                                <ul class="checkout__total__products">
+                                    <li>Kaos Biru <span>Rp.54.999</span></li>
+                                    <li>Waist Bag <span>Rp.88.999</span></li>
+                                    <li>Gelang Anak Muda <span>Rp.64.999</span></li>
+                                    <li>Celana Pendek <span>Rp.104.999</span></li>
+                                </ul>
+                                <ul class="checkout__total__all">
+                                    <li>Subtotal <span>Rp.313.996</span></li>
+                                    <li>Total <span>Rp.313.996</span></li>
+                                </ul>
+                                <div class="checkout__input__checkbox">
+                                    <label for="acc-or">
+                                        Create an account ?
+                                        <input type="checkbox" id="acc-or">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="checkout__input__checkbox">
+                                    <label for="payment">
+                                        Check Payment
+                                        <input type="checkbox" id="payment">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="checkout__input__checkbox">
+                                    <label for="paypal">
+                                        Paypal
+                                        <input type="checkbox" id="paypal">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <button type="submit" class="site-btn">PLACE ORDER</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="about__item">
-                        <h4>Fashionable</h4>
-                        <p>Didesain oleh para desainer ternama, apparels kami berhasil memperoleh gelar Best Fashion of the Year.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="about__item">
-                        <h4>Comfortable</h4>
-                        <p>Apparel kami dibuat dengan kain khusus yang mampu memberikan kenyamanan maksimal.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="about__item">
-                        <h4>Multivarian</h4>
-                        <p>Summer Space Apparel memiliki berbagai macam varian dari headware sampai footwear.</p>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     </section>
-    <!-- About Section End -->
-
-    <!-- Counter Section Begin -->
-    <section class="counter spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="counter__item">
-                        <div class="counter__item__number">
-                            <h2 class="cn_num">102</h2>
-                        </div>
-                        <span>Our <br />Clients</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="counter__item">
-                        <div class="counter__item__number">
-                            <h2 class="cn_num">30</h2>
-                        </div>
-                        <span>Total <br />Categories</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="counter__item">
-                        <div class="counter__item__number">
-                            <h2 class="cn_num">102</h2>
-                        </div>
-                        <span>In <br />Country</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="counter__item">
-                        <div class="counter__item__number">
-                            <h2 class="cn_num">98</h2>
-                            <strong>%</strong>
-                        </div>
-                        <span>Happy <br />Customer</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Counter Section End -->
-
-    <!-- Team Section Begin -->
-    <section class="team spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <span>Our Team</span>
-                        <h2>Meet Our Team</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="team__item">
-                        <img src="img/about/pic1.jpg" alt="">
-                        <h4>Anggito Damartantyo</h4>
-                        <span>Owner Store</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="team__item">
-                        <img src="img/about/pic.jpeg" alt="">
-                        <h4>Iwan Kurniawan</h4>
-                        <span>Designer</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="team__item">
-                        <img src="img/about/pic2.jpg" alt="">
-                        <h4>Nevio Rumbay</h4>
-                        <span>Manager</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="team__item">
-                        <img src="img/about/pic3.jpg" alt="">
-                        <h4>Marcellino Fernandez</h4>
-                        <span>Delivery</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="team__item">
-                        <img src="img/about/pic4.jpg" alt="">
-                        <h4>Paulus Samotana</h4>
-                        <span>Delivery</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Team Section End -->
+    <!-- Checkout Section End -->
 
     <!-- Footer Section Begin -->
     <footer class="footer">
@@ -265,6 +268,8 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
+                        <div class="footer__logo">
+                        </div>
                         <p>The customer is at the heart of our unique business model, which includes design.</p>
                         <a href="#"><img src="img/payment.png" alt=""></a>
                     </div>
@@ -286,7 +291,7 @@
                         <ul>
                             <li><a href="#">Contact Us</a></li>
                             <li><a href="#">Payment Methods</a></li>
-                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Delivary</a></li>
                             <li><a href="#">Return & Exchanges</a></li>
                         </ul>
                     </div>
