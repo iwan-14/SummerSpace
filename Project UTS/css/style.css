@@ -638,7 +638,7 @@ ol {
 
 .hero__social a {
 	font-size: 16px;
-	color: white;
+	color: black;
 	display: inline-block;
 	margin-right: 32px;
 }
@@ -2499,60 +2499,11 @@ ol {
 	color: #b7b7b7;
 }
 
-.checkout__input__checkbox label {
-	font-size: 15px;
-	color: #0d0d0d;
-	position: relative;
-	padding-left: 30px;
-	cursor: pointer;
-	margin-bottom: 16px;
-	display: block;
-}
-
-.checkout__input__checkbox label input {
-	position: absolute;
-	visibility: hidden;
-}
-
-.checkout__input__checkbox label input:checked~.checkmark {
-	border-color: #e53637;
-}
-
-.checkout__input__checkbox label input:checked~.checkmark:after {
-	opacity: 1;
-}
-
-.checkout__input__checkbox label .checkmark {
-	position: absolute;
-	left: 0;
-	top: 3px;
-	height: 14px;
-	width: 14px;
-	border: 1.5px solid #d7d7d7;
-	content: "";
-	border-radius: 2px;
-}
-
-.checkout__input__checkbox label .checkmark:after {
-	position: absolute;
-	left: 1px;
-	top: -3px;
-	width: 14px;
-	height: 7px;
-	border: solid #e53637;
-	border-width: 1.5px 1.5px 0px 0px;
-	-webkit-transform: rotate(127deg);
-	-ms-transform: rotate(127deg);
-	transform: rotate(127deg);
-	content: "";
-	opacity: 0;
-}
-
-.checkout__input__checkbox p {
-	color: #0d0d0d;
-	font-size: 14px;
-	line-height: 24px;
-	margin-bottom: 22px;
+.checkout__input__checkbox{
+	color: black;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 .checkout__order {
