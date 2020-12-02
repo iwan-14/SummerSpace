@@ -27,7 +27,7 @@ class User {
     }
 
     async login(req, res) {
-        
+        console.log(req.body)
     }
 }
 
