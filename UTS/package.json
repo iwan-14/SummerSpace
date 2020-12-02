@@ -1,0 +1,28 @@
+{
+  "name": "summerspaceapparel",
+  "version": "1.0.0",
+  "description": "A repository for summer space apparel online shop",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "watch": "nodemon src/index.js"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "javascript"
+  ],
+  "author": "MarcelinoFernandez",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
