@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product add</title>
+    <style>
+        .label + .label {
+            display: block;
+            margin-top: 20px;
+        }
+
+        .input {
+            box-sizing: border-box;
+            display: block;
+            padding: 5px;
+            outline: none;
+            border: 1px solid #000;
+            border-radius: 5px;
+            min-width: 300px;
+        }
+
+        .textarea {
+            min-width: 300px;
+            max-width: 300px;
+            min-height: 200px;
+            outline: none;
+            padding: 5px;
+            box-sizing: border-box;
+            border: 1px solid #000;
+            border-radius: 5px;
+        }
+
+        .button {
+            margin-top: 30px;
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            outline: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Product</h1>
+    <form action="/product/add" method="POST" class="form" encType="multipart/form-data">
+        <label class="label">
+            <input type="text" name="name" placeholder="product name" value="" class="input">
+        </label><br>
+        <label class="label">
+            <input type="number" name="price" placeholder="product price" value="0" class="input">
+        </label><br>
+        <label class="label">
+            <textarea name="description" class="textarea" placeholder="description"></textarea>
+        </label> <br>
+        <label>
+            <input type="file" name="photo" accept="image/png, image/jpeg">
+        </label><br>
+        <button class="button">submit</button>
+    </form>
+</body>
+</html>
