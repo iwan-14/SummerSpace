@@ -32,7 +32,7 @@ app.use(cookieParser())
 // connect to DB
 try {
     (async() => {
-        await mongoose.connect(`mongodb+srv://philip1412:${process.env.DB_PASSWORD}@cluster0.uewzp.mongodb.net/${process.env.CLUSTER_NAME}?retryWrites=true&w=majority`, { useNewUrlParser: true });
+        await mongoose.connect(`mongodb+srv://marcelinofernandez:${process.env.DB_PASSWORD}@cluster0.gofcx.mongodb.net/${process.env.CLUSTER_NAME}?retryWrites=true&w=majority`, { useNewUrlParser: true });
     })()
 } catch(err) {
     console.log(err, 'error')
